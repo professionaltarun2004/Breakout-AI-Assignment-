@@ -1,0 +1,27 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Ambient brand glow -->
+    <path
+        android:fillColor="#15CABEFF"
+        android:pathData="M54,24A30,30 0 1,0 84,54 30,30 0 0,0 54,24Z" />
+
+    <!-- Left/Top Lavender Bubble (Main CRM communication channel) -->
+    <path
+        android:fillColor="#CABEFF"
+        android:pathData="M46,29C37.7,29 31,35.7 31,44C31,48.2 32.7,51.9 35.5,54.7L32,62L40.2,58.8C42,59.6 44,60 46,60C54.3,60 61,53.3 61,44C61,35.7 54.3,29 46,29Z" />
+
+    <!-- Right/Bottom Teal Bubble (Assistant/AI loop sync indicator) -->
+    <path
+        android:fillColor="#41EEC2"
+        android:pathData="M64,47C57.9,47 53,51.9 53,58C53,60.8 54.1,63.3 55.8,65.1L53,71L58.5,69.5C59.7,70.1 61.1,70.5 62.5,70.5C68.6,70.5 73.5,65.6 73.5,59.5C73.5,58.7 73.4,57.9 73.2,57.2C71.3,51.3 65.8,47 64,47Z" />
+
+    <!-- Star Emblem representing AI automation summaries -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M72,28L73.5,32.5L78,34L73.5,35.5L72,40L70.5,35.5L66,34L70.5,32.5Z" />
+
+</vector>

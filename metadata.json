@@ -1,0 +1,6 @@
+{
+  "name": "Closira CRM",
+  "description": "Mobile CRM dashboard for tracking customer communication activity across WhatsApp, Email, and Call channels.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
