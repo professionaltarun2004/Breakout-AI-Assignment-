@@ -8,8 +8,11 @@ This application is written entirely in **Kotlin** and built with **Jetpack Comp
 
 ## 🎨 Design Concept & Visuals
 
-Closira CRM sports a locked-in, custom premium dark aesthetic, maximizing negative space and color-coordinated visual visual hierarchy to represent high SLA alerts in real-time.
+Closira CRM sports a locked-in, custom premium dark aesthetic, maximizing negative space and color-coordinated visual hierarchy to represent metrics and high SLA alerts in real-time.
 
+*   **Interactive Analytics Charts:** Real-time visual summaries representing lead volume distribution by communication channel (WhatsApp, Email, Call) and SLA status (New, Qualified, Escalated). Built from scratch using native hardware-accelerated Compose Canvas draw arcs and segments.
+*   **Donut & Bar View Toggles:** Includes dynamic, smooth AnimatedContent crossfades allowing owners to switch between high-fidelity donut legends or vertical gradient bar charts.
+*   **Dual-purpose Navigation:** Interactive segments and legend blocks link directly back to repository filter queries. Tap WhatsApp in the chart to immediately slice and filter the CRM queue.
 *   **Dark-Slate Theme:** Background uses deep ambient levels (`#111317` / `#1E2023`) which prevent eye fatigue on intensive CRM monitoring.
 *   **Aesthetic Branding:** Accents pair pastel **Lavender** (`#CABEFF`) with vivid **Teal** (`#41EEC2`).
 *   **Adaptive Responsive Layouts:** Fully container-sized to scale beautifully from compact handheld phone sizes up to wide tablet displays.
@@ -63,9 +66,10 @@ Every interaction is fully functional and responsive to state updates:
 
 1.  **Reactive Combines:** Leads searches and category chip filters (`All`, `WhatsApp`, `Email`, `Call`) combine reactively inside `CrmViewModel` using Coroutine `combine` operators on DB flows. Results filter in real-time.
 2.  **Room Database Persistence:** This implementation goes above and beyond simple in-memory variables by implementing full SQL desugared persistence. Clicking **Resolve** on an escalation deletes the entry from SQLite, and checking a follow-up task updates it instantly and shifts it to the Completed section. 
-3.  **Timeline Progression:** Displays a horizontal progress timeline in detail sheets. The connecting rule bar automatically measures and fills green up to the current progress point.
-4.  **AI Insights Summary:** Includes structured diagnostic cards displaying AI-generated summaries and targeted Playbook SOP completions for each client.
-5.  **Touch Target Sizing:** All controls use standard component pads to guarantee cozy 48dp+ interactive targets matching the highest accessibility specifications.
+3.  **Canvas-Based Donut & Bar Charts:** Custom graphics drawn mathematically inside Compose Canvas utilizing sweep angles, stroke modifiers, and hover indices. Tapping legend elements triggers live workspace filtering so that clicking visual keys instantly re-configures active lists.
+4.  **Timeline Progression:** Displays a horizontal progress timeline in detail sheets. The connecting rule bar automatically measures and fills green up to the current progress point.
+5.  **AI Insights Summary:** Includes structured diagnostic cards displaying AI-generated summaries and targeted Playbook SOP completions for each client.
+6.  **Touch Target Sizing:** All controls use standard component pads to guarantee cozy 48dp+ interactive targets matching the highest accessibility specifications.
 
 ---
 
